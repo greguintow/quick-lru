@@ -1,3 +1,5 @@
 node_modules
 yarn.lock
 .nyc_output
+index.js
+index.d.ts

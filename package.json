@@ -1,9 +1,9 @@
 {
-	"name": "quick-lru",
-	"version": "6.0.2",
+	"name": "quick-lru-ts",
+	"version": "6.0.3",
 	"description": "Simple “Least Recently Used” (LRU) cache",
 	"license": "MIT",
-	"repository": "sindresorhus/quick-lru",
+	"repository": "greguintow/quick-lru",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -11,18 +11,16 @@
 		"url": "https://sindresorhus.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
 	"engines": {
 		"node": ">=12"
 	},
 	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"prepublish:npm": "npm run build",
+		"publish:npm": "npm publish --access public",
 		"//test": "xo && nyc ava && tsd",
 		"test": "xo && ava && tsd"
 	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
 	"keywords": [
 		"lru",
 		"quick",
@@ -40,6 +38,7 @@
 		"ava": "^3.15.0",
 		"nyc": "^15.1.0",
 		"tsd": "^0.14.0",
+		"typescript": "^4.5.4",
 		"xo": "^0.37.1"
 	},
 	"nyc": {
