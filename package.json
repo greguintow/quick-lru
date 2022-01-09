@@ -1,16 +1,15 @@
 {
 	"name": "quick-lru-ts",
-	"version": "6.0.3",
+	"version": "1.0.0",
 	"description": "Simple “Least Recently Used” (LRU) cache",
 	"license": "MIT",
-	"repository": "greguintow/quick-lru",
+	"repository": "greguintow/quick-lru-ts",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
-	"type": "module",
 	"engines": {
 		"node": ">=12"
 	},
@@ -32,7 +31,9 @@
 		"fast",
 		"map",
 		"hash",
-		"buffer"
+		"buffer",
+		"ts",
+		"typescript"
 	],
 	"devDependencies": {
 		"ava": "^3.15.0",

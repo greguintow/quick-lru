@@ -67,7 +67,7 @@ export class QuickLRU<KeyType, ValueType>
 
 	@example
 	```
-	import QuickLRU from 'quick-lru';
+	import { QuickLRU } from 'quick-lru-ts';
 
 	const lru = new QuickLRU({maxSize: 1000});
 

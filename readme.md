@@ -1,4 +1,7 @@
-# quick-lru [![Coverage Status](https://codecov.io/gh/sindresorhus/quick-lru/branch/main/graph/badge.svg)](https://codecov.io/gh/sindresorhus/quick-lru/branch/main)
+# quick-lru-ts [![Coverage Status](https://codecov.io/gh/sindresorhus/quick-lru/branch/main/graph/badge.svg)](https://codecov.io/gh/sindresorhus/quick-lru/branch/main)
+
+>Note: This is just a conversion to TypeScript from the original [quick-lru](https://github.com/sindresorhus/quick-lru)
+
 
 > Simple [“Least Recently Used” (LRU) cache](https://en.m.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_.28LRU.29)
 
@@ -9,13 +12,13 @@ Inspired by the [`hashlru` algorithm](https://github.com/dominictarr/hashlru#alg
 ## Install
 
 ```
-$ npm install quick-lru
+$ npm install quick-lru-ts
 ```
 
 ## Usage
 
 ```js
-import QuickLRU from 'quick-lru';
+import { QuickLRU } from 'quick-lru-ts';
 
 const lru = new QuickLRU({maxSize: 1000});
 
